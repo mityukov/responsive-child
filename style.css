@@ -1,0 +1,212 @@
+/*
+Theme Name:     Juicy Massacre
+Theme URI:      https://github.com/mityukov/responsive-child
+Description:    Custom theme for juicy-massacre.ru extending Responsive theme
+Author:         Vladimir Mityukov
+Author URI:     http://vk.com/v.mityukov
+Template:       responsive
+Version:        0.1.0
+*/
+
+@import url("../responsive/style.css");
+
+/* General links color */
+a {
+  color: rgb(124, 107, 79);
+}
+a:hover {
+  color: rgb(59, 80, 98);
+}
+
+/* HEADER, Title, Tag line */
+div#logo {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+span.site-name a {
+  line-height: 1.4em;
+  font: normal normal bold 75px/1.4em Times, 'Times New Roman', serif;
+  color: rgb(66, 51, 25);
+}
+.site-description {
+  color: rgb(66, 51, 25);
+  font: normal normal normal 20px/1.4em Geneva, Tahoma, sans-serif;
+  margin: 0 0 60px 0;
+}
+
+/* Top menu */
+ul.menu {
+  background: none;
+  filter: none;
+  min-height: 30px;
+}
+ul.menu li {
+  min-height: 30px;
+  margin: 0 5px;
+  background-color: rgb(247, 240, 229);
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 4px 0px;
+}
+ul.menu li:hover {
+  background-color: rgb(124, 107, 79);
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 4px 0px;
+}
+ul.menu li.current_page_item {
+  background-color: rgb(158, 146, 126);
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 4px 0px;
+}
+ul.menu a {
+  border-left: none;
+  color: rgb(66, 51, 25);
+  font: normal normal normal 15px/1.4em Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  height: 30px;
+  line-height: 30px;
+  text-shadow: none;
+  background: none;
+}
+ul.menu a:hover {
+  color: #fff;
+  background: none;
+  filter: none;
+}
+.menu .current_page_item a {
+  color: #fff;
+  background: none;
+  filter: none;
+}
+.menu .current_page_item a:hover {
+  color: color: #fff;
+  background: none;
+  filter: none;
+}  
+
+#wrapper {
+  font: normal normal normal 15px/1.4em Geneva, Tahoma, sans-serif;
+  color: rgb(124, 107, 79);
+  background-color: rgb(247, 240, 229);
+  border: none;
+  border-radius: 2px;
+}
+#wrapper h4 {
+  
+  font: normal normal normal 15px/1.4em Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  color: rgb(124, 107, 79);
+}
+#wrapper h2 {
+  font: normal normal normal 16px/1.4em Times, 'Times New Roman', serif;
+  font-weight: 700;
+  color: rgb(66, 51, 25);
+}
+#wrapper h1 {
+  font: normal normal normal 29px/1.4em Times, 'Times New Roman', serif;
+  font-weight: normal;
+  color: rgb(59, 80, 98);
+}
+th, td, table {
+  border: none;
+}
+
+#featured {
+  font: normal normal normal 15px/1.4em Geneva, Tahoma, sans-serif;
+  color: rgb(124, 107, 79);
+  background-color: rgb(247, 240, 229);
+  border: none;
+  border-radius: 2px;
+}
+#featured p {
+  font: normal normal normal 15px/1.4em Geneva, Tahoma, sans-serif;
+  color: rgb(124, 107, 79);
+}
+#featured h2 {
+  font: normal normal normal 16px/1.4em Times, 'Times New Roman', serif;
+  font-weight: 700;
+  color: rgb(66, 51, 25);
+}
+#featured h1 {
+  font: normal normal normal 29px/1.4em Times, 'Times New Roman', serif;
+  color: rgb(59, 80, 98);
+  font-weight: 700;
+}
+
+
+.widget-wrapper {
+  background-color: rgb(247, 240, 229);
+  border: none;
+  border-radius: 2px;
+}
+.textwidget {
+  font: normal normal normal 15px/1.4em Geneva, Tahoma, sans-serif;
+  color: rgb(124, 107, 79);
+}
+.widget-wrapper h3 {
+  font: normal normal normal 21px/1.4em Times, 'Times New Roman', serif;
+  font-weight: 700;
+  color: rgb(59, 80, 98);
+}
+.textwidget p:first-child {
+  margin-top: 0;
+}
+
+.content-column-left > p,
+.content-column-right > p {
+  margin-left: 4px;
+  width: 415px;
+}
+
+div.slideshowlink {
+  display: none;
+}
+
+
+a.button, a.blue {
+  background-color: #E8E0D0;
+  background-image: none;
+  border: 0px solid #7C6B4F;
+  border-radius: 1px;
+  bottom: 0px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.600);
+  color: rgb(124, 107, 79);
+  font: 24px/1.4em "Geneva", "Tahoma", "sans-serif";
+  text-shadow: none;
+  filter: none;
+}
+a.button:hover, a.blue:hover {
+  background-color: #E8E0D0;
+  background-image: none;
+  border: 0px solid #7C6B4F;
+  border-radius: 1px;
+  bottom: 0px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.600);
+  color: rgb(66, 51, 25);
+  font: 24px/1.4em "Geneva", "Tahoma", "sans-serif";
+  text-shadow: none;
+  filter: none;
+}
+
+/* Sidebar */
+#widgets.col-300 {
+  background-image: url(/wp-includes/images/column-bg.png);
+  background-repeat: repeat-y;
+}
+#widgets.col-300 > div {
+  background-image: url(/wp-includes/images/column-bg.png);
+  background-repeat: repeat-y;
+}
+
+.widget-title {
+  font: normal normal normal 16px/1.4em Times, 'Times New Roman', serif;
+  text-transform: uppercase;
+  color: rgb(124, 107, 79);
+  font-weight: 700;
+  padding: 0 0 10px 0;
+}
+#widgets > div > ul > li {
+  list-style-type: none;
+  margin-bottom: 6px;
+}
+#widgets > div > ul > li > a {
+  font: normal normal normal 21px/1.4em Times, 'Times New Roman', serif;
+  color: rgb(124, 107, 79);
+}
