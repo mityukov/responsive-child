@@ -8,8 +8,6 @@ Template:       responsive
 Version:        0.1.0
 */
 
-@import url("../responsive/style.css");
-
 /* General links color */
 a {
   color: rgb(124, 107, 79);
