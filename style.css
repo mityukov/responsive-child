@@ -208,3 +208,11 @@ a.button:hover, a.blue:hover {
   font: normal normal normal 21px/1.4em Times, 'Times New Roman', serif;
   color: rgb(124, 107, 79);
 }
+
+/** Hide Contact Us widget on mobiles **/
+@media screen and (max-width: 650px) {
+
+	div#mycontactform {
+		display: none;
+	}
+}
