@@ -10,6 +10,8 @@ Version:        0.1.0
 
 body {
   background-image: url('http://juicy-massacre.ru/wp-content/themes/responsive-child/core/images/header-pic-800.png');
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 /* General links color */
 a {
