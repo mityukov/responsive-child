@@ -20,9 +20,10 @@ a:hover {
 div#logo {
   width: 100%;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 280px;
 }
 span.site-name a {
+  display: none;
   line-height: 1.4em;
   font: normal normal bold 75px/1.4em Times, 'Times New Roman', serif;
   color: rgb(66, 51, 25);
