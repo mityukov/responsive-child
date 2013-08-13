@@ -213,14 +213,21 @@ a.button:hover, a.blue:hover {
  * Mobile/Tablet quirks:
  */
 
-/** Hide Contact Us widget on mobiles **/
+@media screen and (max-width: 980px) {
+}
 @media screen and (max-width: 650px) {
 
+	/** Hide Contact Us widget on mobiles **/
 	div#mycontactform {
 		display: none;
 	}
-}
+	body {
+		background-image: url('http://juicy-massacre.ru/wp-content/themes/responsive-child/core/images/header-pic-480.png');
+	}
 
+}
+@media screen and (max-width: 480px) {
+}
 @media screen and (max-width: 320px) {
 	
 	div#container {
