@@ -281,6 +281,7 @@ body { background-color: cyan; }
 	  background-image: url('http://juicy-massacre.ru/wp-content/themes/responsive-child/core/images/header-pic-220.png');
 	}
 	.site-description {
+	  font: normal normal normal 20px/1.4em Geneva, Tahoma, sans-serif;
 	  margin-top: 60px;
 	}
 	div#container {
