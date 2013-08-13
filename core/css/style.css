@@ -1,0 +1,65 @@
+/**
+ * Mobile/Tablet quirks:
+ *
+ * Colors:
+ * - site background: #e8e0d0
+ * - Highlighted menu item: #423319
+ * - Current page menu item: #9e927e
+ */
+
+body { background-color: cyan; }
+
+@media screen and (max-width: 980px) {
+}
+@media screen and (max-width: 800px) {
+
+	div#logo {
+	  height: 200px;
+	  margin-top: 5px;
+	  background-image: url('http://juicy-massacre.ru/wp-content/themes/responsive-child/core/images/header-pic-640.png');
+	}
+	.site-description {
+	  margin-top: 120px;
+	}
+}
+@media screen and (max-width: 650px) {
+
+	/** Hide Contact Us widget on mobiles **/
+	div#mycontactform {
+		display: none;
+	}
+	div#logo {
+	  height: 200px;
+	  margin-top: 5px;
+	  background-image: url('http://juicy-massacre.ru/wp-content/themes/responsive-child/core/images/header-pic-400.png');
+	}
+	.site-description {
+	  margin-top: 120px;
+	}
+	.js .main-nav {
+	  background-color: #423319;
+	  background-image: -webkit-gradient(linear, left top, left bottom, from(#9e927e), to(#423319));
+	  background-image: -webkit-linear-gradient(top, #9e927e, #423319);
+	  background-image: -moz-linear-gradient(top, #9e927e, #423319);
+	  background-image: -ms-linear-gradient(top, #9e927e, #423319);
+	  background-image: -o-linear-gradient(top, #9e927e, #423319);
+	  background-image: linear-gradient(top, #9e927e, #423319);
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#9e927e, endColorstr=#423319);
+	}
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 320px) {
+	
+	div#logo {
+	  height: 130px;
+	  margin-top: 5px;
+	  background-image: url('http://juicy-massacre.ru/wp-content/themes/responsive-child/core/images/header-pic-220.png');
+	}
+	.site-description {
+	  margin-top: 60px;
+	}
+	div#container {
+		padding: 0px 10px;
+	}
+}
