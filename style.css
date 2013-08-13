@@ -216,3 +216,10 @@ a.button:hover, a.blue:hover {
 		display: none;
 	}
 }
+
+@media screen and (max-width: 320px) {
+	
+	div#container {
+		padding: 0px 12px;
+	}
+}
