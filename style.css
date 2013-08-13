@@ -209,6 +209,10 @@ a.button:hover, a.blue:hover {
   color: rgb(124, 107, 79);
 }
 
+/**
+ * Mobile/Tablet quirks:
+ */
+
 /** Hide Contact Us widget on mobiles **/
 @media screen and (max-width: 650px) {
 
