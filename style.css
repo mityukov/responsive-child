@@ -8,6 +8,9 @@ Template:       responsive
 Version:        0.1.0
 */
 
+body {
+  background-image: url('http://juicy-massacre.ru/wp-content/themes/responsive-child/core/images/header-pic-1024.png');
+}
 /* General links color */
 a {
   color: rgb(124, 107, 79);
@@ -225,7 +228,9 @@ a.button:hover, a.blue:hover {
 	body {
 		background-image: url('http://juicy-massacre.ru/wp-content/themes/responsive-child/core/images/header-pic-480.png');
 	}
-
+	div#logo {
+		margin-top: 140px;
+	}
 }
 @media screen and (max-width: 480px) {
 }
