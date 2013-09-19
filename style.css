@@ -105,7 +105,7 @@ ul.menu a:hover {
   filter: none;
 }
 .menu .current_page_item a:hover {
-  color: color: #fff;
+  color: #fff;
   background: none;
   filter: none;
 }  
