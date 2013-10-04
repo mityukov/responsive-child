@@ -13,10 +13,10 @@ function simplest_store() {
 	$raw_json = file(ABSPATH . 'wp-content/plugins/alpine-photo-tile-for-flickr/cache/flickr-1-2-5-user-100551192@N08-groupid-set-tags-30-off-link-Flickr-500.cache');
 
 	$raw_json = join("\n",$raw_json);
-	$photos = unserialize($raw_json)['photos'];
+	$photos = unserialize($raw_json);
 	
 	ob_start();
-	foreach ($photos as $phk => $photo) {
+	foreach ($photos['photos'] as $phk => $photo) {
 ?>
 <div class="grid col-300<?php if (($phk+1)%3==0) echo " fit"; ?>">
   <div class="jm-image-wrapper" style="background-image: url(<?=$photo['image_source']; ?>);">
@@ -24,9 +24,7 @@ function simplest_store() {
       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" title="<?=$photo['image_title']?>" alt="<?=$photo['image_title']?>" width="294" height="182" border="0">
     </a>
   </div>
-  <div class="jm-text-wrapper">
-    <a class="button thickbox" href="#TB_inline?inlineId=buy-form" onclick="javascript: document.getElementsByClassName('wpcf7-textarea')[0].value='Описание товара: <?=htmlspecialchars($photo['image_caption']);?>';">Купить</a></td>
-  </div>
+  <div class="jm-text-wrapper"><a class="button thickbox" href="#TB_inline?inlineId=buy-form" onclick="javascript: document.getElementsByClassName('wpcf7-textarea')[0].value='Описание товара: <?=htmlspecialchars($photo['image_caption']);?>';">Купить</a></div>
 </div>
 <?php
 	}
