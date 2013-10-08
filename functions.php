@@ -34,4 +34,21 @@ function simplest_store() {
 add_shortcode('random_picture', 'random_picture');
 add_shortcode('simplest_store', 'simplest_store');
 
+ 
+
+/**
+ * Proper way to enqueue scripts and styles
+ */
+function jm_thickbox_styles() {
+
+	wp_enqueue_style(
+	    'jm-thickbox-styles',
+	    get_template_directory_uri() . '/core/css/thickbox.css',
+	    array('thickbox_css')
+	);
+}
+
+add_action( 'wp_enqueue_styles', 'jm_thickbox_styles' );
+
+
 ?>
