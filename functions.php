@@ -41,14 +41,10 @@ add_shortcode('simplest_store', 'simplest_store');
  */
 function jm_thickbox_styles() {
 
-	wp_enqueue_style(
-	    'jm-thickbox-styles',
-	    get_template_directory_uri() . '/core/css/thickbox.css',
-	    array('thickbox_css')
-	);
+	wp_register_style('thickbox_overwrite', get_stylesheet_directory_uri().'/core/css/thickbox.css', array('thickbox'));
+	wp_enqueue_style('thickbox_overwrite');
 }
-
-add_action( 'wp_enqueue_styles', 'jm_thickbox_styles' );
+add_action( 'wp_enqueue_scripts', 'jm_thickbox_styles' );
 
 
 ?>

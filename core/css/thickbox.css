@@ -4,3 +4,23 @@
   border-radius: 2px;
   box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 4px 0px;
 }
+#TB_ajaxContent {
+  background: #F7F0E5;
+  border: none;
+  border-radius: 2px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+#TB_title {
+  background-color: #9E927E;
+  border: none;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+#TB_ajaxContent input {
+  padding: 2px 2px;
+}
+#TB_ajaxContent p {
+  margin: 0.5em;
+}
